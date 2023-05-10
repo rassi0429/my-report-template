@@ -1,0 +1,1 @@
+docker run -it --rm -v `pwd`:/workspace -v `pwd`:/root/.pandoc/templates kumassy/alpine-pandoc-ja pandoc -F pandoc-crossref report.md -o report.pdf --pdf-engine=lualatex --template mytemplate.tex -N
